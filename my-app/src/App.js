@@ -12,7 +12,7 @@ export default props =>
         <div className="cards">
 
             <Card title="#03 Componente com filhos" color="#fed766">
-                <Family />
+                <Family lastName="Ferreira" />
             </Card>
 
             <Card title="#02 Valor aleatório" color="#fe4a49">
