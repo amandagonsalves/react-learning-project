@@ -12,11 +12,21 @@ import OddOrEven from './components/conditional/OddOrEven';
 import UserInfo from './components/conditional/UserInfo';
 import DirectFather from './components/comunication/DirectFather';
 import IndirectFather from './components/comunication/IndirectFather';
+import Input from './components/form/Input';
+import Counter from './components/counter/Counter';
 
 export default props =>
     <div id="app">
         <First />
         <div className="cards">
+
+            <Card title="#10 Componente com classe - Contador" color="#fe4a49">
+                <Counter initialValue={10} />
+            </Card>
+
+            <Card title="#09 Componente controlado" color="#fe4a49">
+                <Input />
+            </Card>
 
             <Card title="#08 Comunicação indireta" color="#fe4a49">
                 <IndirectFather />
