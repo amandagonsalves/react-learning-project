@@ -1,0 +1,11 @@
+.table {
+    width: 100%;
+}
+
+.table th {
+    background-color: rgb(247, 168, 168);
+}
+
+.table .line {
+    background-color: rgb(178, 201, 202);
+}
