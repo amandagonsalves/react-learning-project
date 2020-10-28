@@ -14,11 +14,16 @@ import DirectFather from './components/comunication/DirectFather';
 import IndirectFather from './components/comunication/IndirectFather';
 import Input from './components/form/Input';
 import Counter from './components/counter/Counter';
+import Mega from './components/megasena/Mega';
 
 export default props =>
     <div id="app">
         <First />
         <div className="cards">
+
+            <Card title="#11 Megasena" color="#fe4a49">
+                <Mega />
+            </Card>
 
             <Card title="#10 Componente com classe - Contador" color="#fe4a49">
                 <Counter initialValue={10} initialStep={1} />
