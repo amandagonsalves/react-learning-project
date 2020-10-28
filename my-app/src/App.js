@@ -9,6 +9,7 @@ import FamilyMember from './components/basics/FamilyMember';
 import StudentsList from './components/repetition/StudentsList';
 import ProductsTable from './components/repetition/ProductsTable';
 import OddOrEven from './components/conditional/OddOrEven';
+import UserInfo from './components/conditional/UserInfo';
 
 export default props =>
     <div id="app">
@@ -16,7 +17,8 @@ export default props =>
         <div className="cards">
 
             <Card title="#06 Condicional" color="#fe4a49">
-                <OddOrEven number={40} />
+                <OddOrEven number={30} />
+                <UserInfo user={{ name: "Amanda" }} />
             </Card>
 
             <Card title="#05 Repetição" color="#fe4a49">

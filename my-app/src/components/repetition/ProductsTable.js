@@ -4,7 +4,7 @@ import products from '../../data/products';
 
 export default props => {
     const productsTr = products.map((product, index) => {
-        return <tr key={product.id} className={index % 2 == 0 ? 'line' : ''}>
+        return <tr key={product.id} className={(index % 2) === 0 ? 'line' : ''}>
             <td>{product.id}</td>
             <td>{product.product}</td>
             <td>R$ {(product.price).toFixed(2).replace('.',',')}</td>
