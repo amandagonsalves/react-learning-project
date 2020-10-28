@@ -10,11 +10,21 @@ import StudentsList from './components/repetition/StudentsList';
 import ProductsTable from './components/repetition/ProductsTable';
 import OddOrEven from './components/conditional/OddOrEven';
 import UserInfo from './components/conditional/UserInfo';
+import DirectFather from './components/comunication/DirectFather';
+import IndirectFather from './components/comunication/IndirectFather';
 
 export default props =>
     <div id="app">
         <First />
         <div className="cards">
+
+            <Card title="#08 Comunicação indireta" color="#fe4a49">
+                <IndirectFather />
+            </Card>
+
+            <Card title="#07 Comunicação direta" color="#fe4a49">
+                <DirectFather />
+            </Card>
 
             <Card title="#06 Condicional" color="#fe4a49">
                 <OddOrEven number={30} />
