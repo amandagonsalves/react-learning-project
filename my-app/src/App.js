@@ -21,7 +21,7 @@ export default props =>
         <div className="cards">
 
             <Card title="#10 Componente com classe - Contador" color="#fe4a49">
-                <Counter initialValue={10} />
+                <Counter initialValue={10} initialStep={1} />
             </Card>
 
             <Card title="#09 Componente controlado" color="#fe4a49">
