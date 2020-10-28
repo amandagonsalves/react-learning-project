@@ -19,16 +19,20 @@ export default props => {
     
         return numbers;
     }
-    
-    const quantity = props.quantity || 6;
 
-    const initialNumbers = Array(quantity).fill(0);
+    const [quantity, setQuantity] = useState(props.quantity || 6);
+
+    const initialNumbers = generateNumbers(quantity)
 
     const [numbers, setNumbers] = useState(initialNumbers);
 
     return(
         <div>
             <p>{numbers.join(' ')}</p>
+            <div>
+                <label>Quantidade de números</label>
+                <input type="number" value={quantity} onChange={e => setQuantity(+e.target.value)}></input>
+            </div>
             <button onClick={_ => setNumbers(generateNumbers(quantity))}>Gerar</button>
         </div>
     )
